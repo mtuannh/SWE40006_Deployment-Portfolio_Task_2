@@ -1,8 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Azure Task Manager</h1>
+
+    <p class="lead">
+        A simple task management web application
+        built with ASP.NET Core and .NET 8.
+    </p>
+
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Tasks">
+        View My Tasks
+    </a>
 </div>

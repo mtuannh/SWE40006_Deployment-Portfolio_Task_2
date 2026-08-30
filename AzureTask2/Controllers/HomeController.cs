@@ -23,6 +23,16 @@ namespace AzureTask2.Controllers
             return View();
         }
 
+        public IActionResult Tasks()
+        {
+            return View();
+        }
+
+        public IActionResult Health()
+        {
+            return Ok("Healthy");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
